@@ -6,7 +6,7 @@ const path = require('path');
 const app = express();
 
 // Замени на токен твоего бота, который ты получил от @BotFather
-const token = '8091200329:AAGC1N5OIVq4T_a-CsnPy2J1XrwW4MIMEOI';
+const token = 'process.env.BOT_TOKEN';
 const bot = new TelegramBot(token, { polling: false });
 
 app.use(express.json());
